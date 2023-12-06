@@ -43,7 +43,7 @@ public class Main {
         Scanner sc=new Scanner(System.in);
        System.out.println("Deyismek istediyiniz setrin id daxil edin = ");
         int id=sc.nextInt();
-      // sc.nextLine();
+
 
         CityDaoInter cityDao = new CityDaoImpl();
         City c = cityDao.getById(id);
