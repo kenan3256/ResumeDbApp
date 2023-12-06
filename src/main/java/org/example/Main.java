@@ -43,6 +43,7 @@ public class Main {
         Scanner sc=new Scanner(System.in);
        System.out.println("Deyismek istediyiniz setrin id daxil edin = ");
         int id=sc.nextInt();
+      // sc.nextLine();
 
         CityDaoInter cityDao = new CityDaoImpl();
         City c = cityDao.getById(id);
@@ -51,11 +52,10 @@ public class Main {
 //         indi yazdigimizda ise biz id 2 olan setiri verir ve biz hemin setrin icindeki datalari deyisirik
 //City c = new City(); ve  c.setId(2);
 
-
+        sc.nextLine();
         System.out.println("name= ");
         String name=sc.nextLine();
         c.setName(name);
-        sc.nextLine();
 
         System.out.println("country code= ");
         String countrycode=sc.nextLine();
@@ -90,8 +90,7 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
 
-
-updateCity();
+        updateCity();
         getAllCity();
     }
 

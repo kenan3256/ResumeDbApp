@@ -88,7 +88,7 @@ public class CityDaoImpl extends AbstractDao implements CityDaoInter {
     @Override
     public boolean updateCity(City c1) {
         try (Connection c = connection()) {
-            PreparedStatement stmt = c.prepareStatement("update world.city set Name=?,CountryCode=?,District=?,Population=? where id=?");
+            PreparedStatement stmt = c.prepareStatement("update kenan.city set Name=?,CountryCode=?,District=?,Population=? where id=?");
             stmt.setString(1, c1.getName());
             stmt.setString(2, c1.getCountryCode());
             stmt.setString(3, c1.getDistrict());
